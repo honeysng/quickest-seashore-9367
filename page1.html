@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #nav{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(46, 44, 44);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+
+        #nav>div>a{
+            margin-left: 25px;
+            color: white;
+            padding-top: 5px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        #nav>div>img{
+            margin-left: 35px;
+            margin-right: 35px;
+            margin-top: 8px;
+        }
+        
+        #id1{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: flex-end;
+            border-bottom: 1px solid rgb(46, 44, 44);
+        }
+        #id1>a{
+            padding-top: 30px;
+            margin-right: 12px;
+            color: rgb(153, 149, 149);
+            text-decoration: none;
+        }
+
+        #Tv{
+            flex-grow: 1;
+            font-size: 25px;
+            font-weight: 300;
+        }
+
+        #id2{
+            width: 70%;
+            margin: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgb(153,149,149);
+        }
+        #id2>div:nth-child(2){
+            width: 50%;
+            padding-top: 30px;
+            
+        }
+        #id2>div>img{
+            width: 100%;
+            height: auto;
+        }
+
+        #id2>div>h1{
+            width: 65%;
+            margin: auto;
+            text-align: left;
+            font-size: 50px;
+            font-weight: 200;
+            margin-top: 40px;
+        }
+        #id2>div>p{
+            width: 65%;
+            margin: auto;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 100;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        #id2>div>a{
+            margin-left: 115px;
+            text-decoration: none;
+            color: #1E90FF;
+        }
+        #main{
+            width: 100%;
+            background-color: rgb(219, 218, 218);
+        }
+
+        #id4{
+            width: 70%;
+            margin: auto;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid rgb(153,149,149);
+
+        }
+        #id4>div:nth-child(1){
+            width: 50%;
+            padding-top: 30px;
+            
+        }
+        #id4>div>img{
+            width: 100%;
+            height: auto;
+        }
+
+        #id4>div>h1{
+            width: 85%;
+            margin: auto;
+            text-align: left;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+        
+        #id4>div>a{
+            text-decoration: none;
+            display: block;
+            margin-left: 50px;
+            margin-top: 20px;
+            color: #1E90FF;
+            font-weight: 400;
+        }
+        
+        #div2{
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        #div2>div{
+            padding: 15px;
+            margin-top: 10px;
+        }
+        #div2>div>img{
+            width: 80%;
+            margin: auto;
+        }
+
+        #div2>div>h1{
+            width: 60%;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        #div2>div>a{
+            text-decoration: none;
+            display: block;
+            width: 60%;
+            margin-top: 20px;
+            color: #1E90FF;
+            font-weight: 500;
+        }
+
+        #div3{
+            width: 70%;
+            margin: auto;
+            border-top: 1px solid rgb(153,149,149) ;
+            padding-bottom: 60px;
+
+        }
+
+        #div3>p{
+            width: 90%;
+            font-weight: 900;
+        }
+
+        #div3>footer{
+            font-size: 10px;
+            color: rgb(153,149,149);
+        }
+
+        #div4{
+            width: 100%;
+            display: flex;
+            border-top: 5px solid rgb(153,149,149);
+            border-bottom: 5px solid rgb(153,149,149);
+        }
+
+        #div4>button{
+            height: 35px;
+            width: 100px;
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 2px solid #1E90FF;
+            border-radius: 5px;
+            color: #1E90FF;
+        }
+        
+        #div4>button:hover{
+            color: white;
+            background-color: #1E90FF;
+        }
+        #div4>h2{
+            margin-left: 215px;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        #div5{
+            height: 100px;
+            width: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: end;
+           margin-bottom: 20px;
+        } 
+
+         #div5>a>p{
+            color: gray;
+            padding-top: 20px;
+            margin-left: 180px;
+            font-size: 20px;
+
+        } 
+
+        #div5>a{
+            text-decoration: none;
+            color: #1E90FF;
+        } 
+
+        #div6{
+             height: 100px; 
+             display: flex;
+             width: 100%;
+             background-color:  rgb(219, 218, 218) ;
+            
+        }
+
+        #div6>a{
+            margin-left: 20px;
+            padding-top: 35px;
+            text-decoration: none;
+        }
+        #div6>img{
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div>
+            <img src="https://www.apple.com/ac/globalnav/7/en_GB/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt="">
+        </div>
+        <div>
+            <a href="">Store</a>
+        </div>
+        <div>
+            <a href="">Mac</a>
+        </div>
+        <div>
+            <a href="">iPad</a>
+        </div>
+        <div>
+            <a href="">iPhone</a>
+        </div>
+        <div>
+            <a href="">Watch</a>
+        </div>
+        <div>
+            <a href="">AirPods</a>
+        </div>
+        <div>
+            <a href="">TV & Home</a>
+        </div>
+        <div>
+            <a href="">Only on Apple</a>
+        </div>
+        <div>
+            <a href="">Accessories</a>
+        </div>
+        <div>
+            <a href="">Support</a>
+        </div>
+        <div>
+            <img src="https://www.apple.com/ac/globalnav/7/en_GB/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_search_image__cbllq1gkias2_small.svg" alt="">
+        </div>
+        <div>
+            <img src="https://www.apple.com/ac/globalnav/7/en_GB/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__yzte50i47ciu_large.svg" alt="">
+        </div>
+    </div>
+
+
+    <div id="home">
+        <div id="main">
+            <div id="id1">
+                <h3 id="Tv">Apple TV+</h3>
+                <a href="">Communities</a>
+                <a href="">Contact Support</a>
+            </div>
+            <div id="id2">
+                <div>
+                    <h1>All the ways to watch Apple Tv+</h1>
+                    <p>Choose how you want to watch, whether it's on your TV, on your Apple devices,or on the web.</p>
+                    <a href="">Table of Contents +</a>
+                </div>
+                <div>
+                    <img src="https://help.apple.com/assets/62268654B03EEF085E38F027/62268654B03EEF085E38F02E/en_US/c501aaec9978795625558b96c2eaf91f.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div id="id4">
+            <div>
+                    <img src="https://help.apple.com/assets/62268654B03EEF085E38F027/62268654B03EEF085E38F02E/en_US/3e5fcae484aef707d2ab55d2db4c4251.png" alt="">
+            </div>
+            <div>
+                <h1>Watch on your Tv+</h1>
+                <a href="">Apple Tv(4K,HD,and 3rd generation) ></a>
+                <a href="">Smart TVs and streaming devices ></a>
+                <a href="">Gaming consoles ></a>
+                <a href="">Cable or satellite services ></a>
+            </div>
+        </div> 
+        
+        <div id="div2">
+            <div>
+                <img src="https://help.apple.com/assets/62268654B03EEF085E38F027/62268654B03EEF085E38F02E/en_US/8bc3481f838f40f75d42eabd8ba223cf.png" alt="">
+                <h1>Watch on other Apple devices</h1>
+                <a href="">iPhone,iPad,and iPod touch ></a>
+                <a href="">Mac ></a>
+            </div>
+            <div>
+                <img src="https://help.apple.com/assets/62268654B03EEF085E38F027/62268654B03EEF085E38F02E/en_US/d7354001cffbc615f9456970b15935ab.png" alt="">
+                <h1>Watch on the web</h1>
+                <a href="">Windows PC(inculuding Microsoft Surface), Chrome OS, and Android devices ></a>
+                
+            </div>
+            <div>
+                <img src="https://help.apple.com/assets/62268654B03EEF085E38F027/62268654B03EEF085E38F02E/en_US/dc76db47f02dc3d0eedd5479359f6cb2.png" alt="">
+                <h1>Want the best 4K experience?</h1>
+                <a href="">Buy an Apple TV 4K and get three months free of Apple TV+ ></a>
+                
+            </div>
+        </div>
+        <div id="div3">
+            <p>To explore All the ways to watch Apple TV+ and more, click Table of Contents at the top of the page, or enter a word or phrase in the search field.</p>
+            <footer>Apple TV+ requires a subscription. Not all features and content are available in all countries or regions, or on all streaming devices.</footer>
+        </div>
+        <div id="div4">
+            <h2>Helpful?</h2>
+            <button>Yes</button>
+            <button>No</button>
+        </div>
+        <div id="div5">
+            <a href=""> <p>Next ></p>
+                Apple TV (4K,HD,and 3rd generation)
+            </a>
+        </div>
+        <div id="div6"> 
+            <img src="https://www.apple.com/ac/globalnav/7/en_GB/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__b5er5ngrzxqq_large.svg" alt="">
+            <a href="">Support</a>
+            <a href="">Apple TV+</a>
+        </div>
+    </div>
+</body>
+</html>
