@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      #banner{
+        width: 100%;
+        height: 850px;
+        background-color: black;
+        background-image: url(https://is4-ssl.mzstatic.com/image/thumb/zW6Os_LfNl34j5RxAbJArA/1679x945sr.webp);
+        display: grid;
+      }
+      #banner>#id{
+        width: 30%;
+        height: 190px;
+
+      }
+      #banner>#id>img{
+        width: 80%;
+        margin-top: 60px ;
+        margin-left: 60px;
+      }
+
+      #banner>p{
+        color: white;
+      }
+
+      #banner>#id>p{
+        margin-left: 140px;
+        font-weight: 400;
+        color: white;
+      }
+      
+
+      #id2{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        margin-top:359px ;
+        
+      }
+
+      
+
+      #id3{
+        width: 50%;
+      }
+      #id3>ul>li>button{
+           width: 85%;
+           height: 50px;
+           margin-top: 10px;
+           border-radius: 10px;
+           font-weight: bold;
+      }
+
+      #id2>#id4{
+        flex-grow: 1;
+      }
+      #id2>#id4>p{
+        font-size: 13px;
+        padding: 0px 35px;
+        margin-top: 30px;
+        color: white;
+      }
+      #id2>#id4>p+p{
+        margin-top: 0px;
+      }
+
+      #id4>img{
+        width: 3%;
+      }
+
+      #id5{
+        width: 45%;
+      }
+      #id5>button{
+        margin-top: 40px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: white;
+
+      }
+      #id5>p{
+        font-size: 15px;
+        width: 90%;
+        margin: auto;
+        margin-top: 5px;
+        margin-left: 20px;
+      }
+
+      #button{
+        margin-left: 150px;
+      }
+     
+      span{
+        color: white;
+      }
+      
+      #season{
+        margin-left: 20px;
+      }
+
+      #season>div{
+        display: grid;
+        grid-template-columns:repeat(5,1fr);
+        padding: 20px;
+        gap: 20px;
+      }
+    
+      #season>div>div{
+        width: 100%;
+      }
+      #season>h1,h2,h3,h4,p{
+        color: #000;
+      }
+      #season>div>div>img{
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      #season>div>div>p{
+         font-size: 13px;
+         color: gray;
+      }
+
+      #trailer{
+        width: 20%;
+        margin-left: 20px;
+      }
+
+      #trailer>img{
+          width: 100%;
+          border-radius: 10px;
+      }
+      #trailer>p{
+        font-size: 15px;
+      }
+     
+      #bonus{
+        margin-left: 20px;
+      }
+      #bonus>div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+      }
+      #bonus>div>div{
+        width: 55%;
+        height: 100%;
+      }
+      #bonus>div>div>img{
+        width: 100%;
+        border-radius: 10px;
+      }
+      #bonus>div>div>p{
+        font-size: 15px;
+      }
+
+      #related{
+        margin-left: 20px;
+      }
+      #related>div{
+        display: grid;
+        grid-template-columns:repeat(5,1fr);
+        padding: 20px;
+        gap: 20px;
+      }
+    
+      #related>div>div{
+        width: 100%;
+      }
+      #related>h1,h2,h3,h4,p{
+        color: #000;
+      }
+      #related>div>div>img{
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      #related>div>div>p{
+         font-size: 13px;
+         color: gray;
+      }
+
+      #cast{
+        margin-left: 20px;
+      }
+      #cast>div{
+        display: grid;
+        grid-template-columns:repeat(11,1fr);
+        padding: 20px;
+        gap: 20px;
+        overflow-x: auto;
+      }
+    
+      #cast>div>div{
+        width: 100%;
+      }
+      #cast>div>div>h3{
+        color: #000;
+        font-size: 12px;
+      }
+      #cast>div>div>img{
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      #cast>div>div>p{
+         font-size: 12px;
+         color: gray;
+      }
+
+      
+      #watch{
+        width: 20%;
+        margin-left: 20px;
+      }
+
+      #watch>img{
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+      }
+      #watch>h3{
+        font-size: 15px;
+        font-weight: 200;
+        text-align: center;
+        height: 50px;
+        border: 1px solid rebeccapurple;
+        margin-top: -5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: gray;
+      }
+    </style>
+   
+   
+
+
+</head>
+<body>
+    <div id="banner">
+        <div id="id">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/e9IGeQciTClggIEY1yivuA/1200x450.webp" alt="">
+            <p>NEW EPISODES FRIDAY</p>
+        </div>
+        <div id="id2">
+            <div id="id3">
+                <ul>
+                    <li><button >Play Free Episode</button></li>
+                    <li><button>Start Free Trial</button></li>
+                    <li><button>+ Add to Up Next</button></li>
+                </ul>
+                
+            </div>
+            <div id="id4" >
+                <p>Inspired by actual events. As Jimmy Keene begins a 10-year prison sentence, he gets an incredible offer: If he can elicit a confession from suspected killer Larry Hall, Jimmy will be freed. Completing this mission becomes the challenge of a lifetime.</p>
+                <p>Drama 2022
+                <img src="https://tv.apple.com/assets/badges/common-sense-onDark-small@2x-f3312938f6b7188fbf37701e3557e399.png" alt="">
+                <span>17+</span>
+                <img src="https://tv.apple.com/assets/badges/ratings/us_tv/MetadataBadge%20TV-MA%20OnDark-ad95b2e3f6a6d6741ad700568277017c.svg" alt="">
+                <img src="https://tv.apple.com/assets/badges/MetadataBadge%204K%20OnDark-c90195dae0171c69694b4d7386421ad8.svg" alt="">
+                <img src="https://tv.apple.com/assets/badges/MetadataBadge%20Atmos%20OnDark-007278edac4076aaf1bc01dedf68e3cd.svg" alt="">
+                <img src="https://tv.apple.com/assets/badges/MetadataBadge%20Dolby%20OnDark-2c6afeb5b02b2c48655606bd9d178bfd.svg" alt="">
+                <img src="https://tv.apple.com/assets/badges/MetadataBadge%20CC%20OnDark-7b5b00df263bfee5af843510f708c307.svg" alt="">
+                <img src="https://tv.apple.com/assets/badges/MetadataBadge%20AD%20OnDark-4731d380509cdd9c3e59e73cb9dc09d5.svg" alt="">
+                <img src="https://tv.apple.com/assets/badges/MetadataBadge%20SDH%20OnDark-45f29ce5e07128bf67d924a31a003cf3.svg" alt="">
+                </p>
+            </div>
+
+            <div id="id5">
+                
+                <button id="button">⏵</button>
+                <button>🔇</button>
+                <button>\</button>
+                <p>
+                    Starring Taron Egerton, Ray Liotta, Greg Kinnear
+                </p>
+            
+            </div>
+        </div>
+    </div>
+
+    <div id="season">
+        <h2>Season1</h2>
+        <div>
+         <div>
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/azNDA10WYGOOtm0BjhgmGw/1478x832.webp" alt="">
+            <p>EPISOD 1</p>
+            <h4>Pilot</h4>
+            <p>Jimmy Keene is living in the fast lane—until he gets a 10-year prison sentence. Behind bars, he’s approached about a high-stakes deal for freedom.</p>
+            <p>57min july 8, 2022</p>
+         </div>
+         <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/0YqsCb3rCnGriNptdfm-mw/1478x832.webp" alt="">
+            <p>EPISOD 2</p>
+            <h4>We Are Coming, Father Abraham</h4>
+            <p>Agent McCauley prepares Jimmy for the mission. Detective Miller question Larry about the missing women, leading to a polygraph test.</p>
+            <p>59min july 8, 2022</p>
+         </div>
+         <div>
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/ZhSD7fmL-funffCAgYRkxw/1478x832.webp" alt="">
+            <p>EPISOD 3</p>
+            <h4>Hand to Mouth</h4>
+            <p>Struggling with his transition to maximum security prison Jimmy initiatrs a friendship with Larry. New holes in Larry's stories are uncovered.</p>
+            <p>58min july 15, 2022</p>
+         </div>
+         <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/pK94N99ZCL6RlGS1po6IsQ/1478x832.webp" alt="">
+            <p>EPISOD 4</p>
+            <h4>WhatsHerName</h4>
+            <p>In the afternoon of prison riot, Jimmy and Larry find themseles with time to learn more about each other.</p>
+            <p>59min july 22, 2022</p>
+         </div>
+         <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/WF96V7Andt7YahHwYPpd_Q/1478x832.webp" alt="">
+            <p>EPISOD 5</p>
+            <h4>The Place I Lie</h4>
+            <p>Jimmy's mounting fear and paranoia compel him to provoke Larry. McCauley and Miller havr a breakthrough. Larry's therapist grows concerned.</p>
+            <p>54min july 29, 2022</p>
+         </div>
+         </div>
+    </div>
+
+    <div id="trailer">
+        <h2>
+            Trailers
+        </h2>
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/gS8Yoan3pVkzgp9jQ4M9_w/1000x563.webp" alt="">
+        <p>Befriend</p>
+    </div>
+    <div id="bonus">
+            <h2>Bonus Content</h2>
+            <div>
+                <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/FQO83K6420kum4TkYsPq7Q/1000x563.webp" alt="">
+                <p>Cat and Mouse</p>
+                </div>
+                <div>
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/tJOD1hwPGdsEe1vW_48lAg/1000x563.webp" alt="">
+                    <p>Take the Plea</p>
+                </div>
+                <div>
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/B_aMPxQ9c4BcLAK6HrLgPg/1000x563.webp" alt="">
+                    <p>The Offier</p>
+                </div>
+            </div>
+    </div>
+    <div id="related">
+            <h2>Related</h2>
+            <div>
+                <div>
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt="">
+                </div>
+                <div>
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/IyvoDdhWEjtSADaSryepIw/738x416.webp" alt="">
+                </div>
+                <div>
+                    <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt="">
+                </div>
+                <div>
+                    <img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt="">
+                </div>
+                <div>
+                    <img src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" alt="">
+                </div>
+            </div>
+    </div>
+
+        <div id="cast">
+            <h2>Cast and Crew</h2>
+            <div>
+            <div>
+              <img src="https://is1-ssl.mzstatic.com/image/thumb/4Piz-VlZkUS_VkuJHRGs9Q/492x492bb.webp" alt="">  
+              <h3>Tiron Egerton</h3>
+              <p>James Keene</p>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/V1QTw_e820xMv6SrevcQdw/492x492bb.webp" alt="">
+                <h3>Ray Liotta</h3>
+                <p>Big Jim Keene</p>
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/bSS4Rz6WxHDnuhx7c1dAjQ/492x492ve.webp" alt="">
+                <h3>Greg Kinnear</h3>
+                <p>Brien Miller</p>
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/8gzp9Vya3He74Ld_-DbRKg/492x492bb.webp" alt="">
+                <h3>Sepideh Moafi</h3>
+                <p>Lauren McCauley</p>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/Oj4_hBDNRnRycq76awNIdA/492x492bb.webp" alt="">
+                <h3>paul walter Hauser</h3>
+                <p>Larry Hall</p>
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/4Piz-VlZkUS_VkuJHRGs9Q/492x492bb.webp" alt="">  
+                <h3>Tiron Egerton</h3>
+                <p>Excutive Producer</p>
+              </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/aR-KF7UdxTwzqQz87JWtig/492x492ve.webp" alt="">
+                <h3>James Keene</h3>
+                <p>Excutive Producer</p>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/B8Ue_zbC_YyjrXAwzapuRw/492x492bb.webp" alt="">
+                <h3>Michael Roskam</h3>
+                <p>Excutive Producer</p>
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/CxDoR29oFC1w7lDMcMkU4Q/492x492ve.webp" alt="">
+                <h3>Dan Friedkin</h3>
+                <p>Excutive Producer</p>
+            </div>
+            <div>
+                <img src="https://is4-ssl.mzstatic.com/image/thumb/GGMV0kQLZOlvIxvOVrWr8g/492x492bb.webp" alt="">
+                <h3>Kary Antholis</h3>
+                <p>Excutive Producer</p>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/sqPp0tZxW00wwJR0CoQ1Jw/492x492ve.webp" alt="">
+                <h3>Alexandra Milchan</h3>
+                <p>Excutive Producer</p>
+            </div>
+            </div>
+        </div>
+        <div id="watch">
+            <h2>How to Watch</h2>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/DB8YqlVtN7M8YvGvgsP2eg/400x225.png" alt="">
+            <h3>Start Free Trial</h3>
+        </div>
+    </div>
+</body>
+</html>
